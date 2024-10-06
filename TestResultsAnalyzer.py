@@ -74,7 +74,7 @@ if GOOGLE_API_KEY:
 
                 plt.figure(figsize=(10, 6))
                 plt.plot(range(1, len(df)+1), df['TestResult_numeric'], label='Actual Test Results', color='blue')
-                plt.plot(range(len(df)+1, len(df)+6), forecast, label='Forecast (Next 5 Results)', color='green')
+                plt.plot(range(len(df)+1, len(df)+6), forecast, label='Forecast (Next 50 Results)', color='green')
                 plt.title('Forecast for Next 5 Test Results (ARIMA)', fontsize=14)
                 plt.xlabel('Test Case ID (Numeric) (Including Forecasted)', fontsize=12)
                 plt.ylabel('Test Result (Pass=1, Fail=0, Blocked=-1, Skipped=-2)', fontsize=12)
